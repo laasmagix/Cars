@@ -882,3 +882,51 @@ body {
   }
 }
 /* ================================================================================ */
+/* ======================================== Footer ======================================== */
+.footer {
+  padding-top: 65px;
+  padding-bottom: 63px;
+}
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copyright {
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: 2.25px;
+  padding-right: 20px;
+}
+.footer__icons {
+  display: flex;
+  gap: 21px;
+}
+.footer__icon {
+  flex: 0 1 25px;
+}
+.footer__icon img {
+  max-width: 100%;
+}
+@media (max-width: 830.98px) {
+  .footer {
+    padding-top: 35px;
+    padding-bottom: 33px;
+  }
+}
+@media (max-width: 526.98px) {
+  .footer__container {
+    justify-content: center;
+  }
+  .footer__copyright {
+    text-align: center;
+  }
+  .footer__copyright:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+}
+/* ================================================================================ */
