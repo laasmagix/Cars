@@ -126,6 +126,8 @@ body {
 }
 .page__understand {
 }
+.page__contact {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -268,8 +270,6 @@ body {
 }
 .button {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   background: #db2512;
   height: 50px;
   padding: 11px 48px;
@@ -766,6 +766,119 @@ body {
   }
   .easy__subtitle {
     font-size: 18px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Contact ======================================== */
+.contact {
+  padding: 77px 0px;
+  background-color: #171616;
+}
+.contact__container {
+}
+.contact__title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150%; /* 45px */
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+}
+.contact__title:not(:last-child) {
+  margin: 0px 0px 47px 0px;
+}
+.contact__form {
+  max-width: 440px;
+}
+.contact__row {
+  margin: 0 -20px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__group {
+  padding: 0 20px;
+  flex: 1 1 auto;
+  position: relative;
+  margin: 0px 0px 30px 0px;
+}
+.input {
+  width: 100%;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: 2.25px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  padding: 9px 0;
+}
+.label {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: 2.25px;
+  /* padding-top: 8px; */
+  padding-bottom: 8px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+.input:focus + .label {
+  font-size: 12px;
+  transform: translateY(-16px);
+}
+.input:not(:placeholder-shown) + .label {
+  font-size: 12px;
+  transform: translateY(-16px);
+}
+.textarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: 2.25px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+}
+.textarea:focus + .label {
+  font-size: 12px;
+  transform: translateY(-16px);
+}
+.textarea:not(:placeholder-shown) + .label {
+  font-size: 12px;
+  transform: translateY(-16px);
+}
+@media (max-width: 767.98px) {
+  .contact__title {
+    text-align: center;
+  }
+  .contact__form {
+    max-width: none;
+  }
+  .contact__row {
+    margin: 0 -20px;
+    flex: 0 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .contact__group {
+    margin: 0px 0px 60px 0px;
+  }
+  .textarea {
+    min-height: 100px;
   }
 }
 /* ================================================================================ */
